@@ -1,0 +1,9 @@
+{
+  "paperzilla": {
+    "type": "http",
+    "url": "https://paperzilla.ai/api/mcp",
+    "bearer_token_env_var": "PAPERZILLA_MCP_KEY",
+    "required": false,
+    "tool_timeout_sec": 90
+  }
+}

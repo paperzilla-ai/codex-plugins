@@ -1,0 +1,43 @@
+{
+  "name": "paperzilla",
+  "version": "0.1.0",
+  "description": "Connect Codex to Paperzilla research feeds through the Paperzilla MCP server.",
+  "author": {
+    "name": "Paperzilla",
+    "email": "mark@paperzilla.ai",
+    "url": "https://paperzilla.ai"
+  },
+  "homepage": "https://docs.paperzilla.ai/guides/mcp",
+  "repository": "https://github.com/paperzilla-ai/codex-plugins",
+  "license": "Proprietary",
+  "keywords": [
+    "paperzilla",
+    "research",
+    "papers",
+    "mcp",
+    "literature"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Paperzilla",
+    "shortDescription": "Read Paperzilla research feeds from Codex",
+    "longDescription": "Connect Codex to Paperzilla's MCP server so agents can list projects, read curated feeds, search papers, fetch Atom URLs, and retrieve paper details or markdown using a Paperzilla MCP key.",
+    "developerName": "Paperzilla",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://paperzilla.ai",
+    "privacyPolicyURL": "https://paperzilla.ai/privacy",
+    "termsOfServiceURL": "https://paperzilla.ai/terms",
+    "defaultPrompt": [
+      "Use Paperzilla to show my research projects.",
+      "Search my Paperzilla feed for new papers about retrieval.",
+      "Get markdown for this Paperzilla paper."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}
