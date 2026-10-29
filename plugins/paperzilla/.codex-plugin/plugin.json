@@ -1,7 +1,7 @@
 {
   "name": "paperzilla",
-  "version": "0.1.0",
-  "description": "Connect Codex to Paperzilla research feeds through the Paperzilla MCP server.",
+  "version": "2.0.0",
+  "description": "Find research digests, read papers, and search your Paperzilla feeds.",
   "author": {
     "name": "Paperzilla",
     "email": "mark@paperzilla.ai",
@@ -20,24 +20,25 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Paperzilla",
-    "shortDescription": "Read Paperzilla research feeds from Codex",
-    "longDescription": "Connect Codex to Paperzilla's MCP server so agents can list projects, read curated feeds, search papers, fetch Atom URLs, and retrieve paper details or markdown using a Paperzilla MCP key.",
+    "shortDescription": "Research papers and digests",
+    "longDescription": "Find public research digests, read papers as Markdown, and search your Paperzilla project feeds. Sign in to connect your account. Public digests and catalog papers work without a project. Preparing missing Markdown is an explicit action; Paperzilla does not import missing papers or create projects through this integration.",
     "developerName": "Paperzilla",
     "category": "Productivity",
     "capabilities": [
-      "Read"
+      "Read",
+      "Write"
     ],
     "websiteURL": "https://paperzilla.ai",
+    "supportURL": "https://docs.paperzilla.ai/guides/mcp",
     "privacyPolicyURL": "https://paperzilla.ai/privacy",
     "termsOfServiceURL": "https://paperzilla.ai/terms",
     "defaultPrompt": [
-      "Use Paperzilla to show my research projects.",
+      "Find public digests about machine learning.",
       "Search my Paperzilla feed for new papers about retrieval.",
-      "Get markdown for this Paperzilla paper."
+      "Read the Markdown for this Paperzilla paper."
     ],
-    "brandColor": "#2563EB",
+    "brandColor": "#5a8f32",
     "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.png",
-    "screenshots": []
+    "logo": "./assets/logo.png"
   }
 }

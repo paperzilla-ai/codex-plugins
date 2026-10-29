@@ -14,17 +14,11 @@ Then open the Codex plugin directory, choose the Paperzilla marketplace, and ins
 
 ## Authentication
 
-Generate a Paperzilla MCP key in the Paperzilla app, then expose it before starting Codex:
+Connect your Paperzilla account through the client's OAuth sign-in flow. The server URL is `https://paperzilla.ai/api/mcp`. Review the requested permissions before allowing access.
 
-```sh
-export PAPERZILLA_MCP_KEY="pzmcp_..."
-```
+Every authenticated account can read public digests and catalog papers without a project. Owned projects add personalized feeds. Requesting Markdown processing is a separate write action. No project edits, feedback writes, or paper imports are exposed.
 
-The Paperzilla plugin uses that key to connect Codex to:
-
-```text
-https://paperzilla.ai/api/mcp
-```
+This replacement retires API keys and old tool names. Remove old connection credentials and reconnect with OAuth. Manage or revoke connections at [Connect AI clients](https://paperzilla.ai/ai-connections). See [setup, permissions, and processing states](https://docs.paperzilla.ai/guides/mcp).
 
 ## Contents
 

@@ -1,9 +1,23 @@
 {
-  "paperzilla": {
-    "type": "http",
-    "url": "https://paperzilla.ai/api/mcp",
-    "bearer_token_env_var": "PAPERZILLA_MCP_KEY",
-    "required": false,
-    "tool_timeout_sec": 90
+  "mcpServers": {
+    "paperzilla": {
+      "type": "http",
+      "url": "https://paperzilla.ai/api/mcp",
+      "enabled_tools": [
+        "account_status",
+        "projects_list",
+        "projects_get",
+        "feed_get",
+        "feed_search",
+        "public_digests_search",
+        "public_digest_issues_list",
+        "public_digest_get",
+        "paper_get",
+        "paper_markdown_get",
+        "paper_markdown_request"
+      ],
+      "required": false,
+      "tool_timeout_sec": 90
+    }
   }
 }
