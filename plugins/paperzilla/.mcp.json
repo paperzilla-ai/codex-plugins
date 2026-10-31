@@ -14,7 +14,9 @@
         "public_digest_get",
         "paper_get",
         "paper_markdown_get",
-        "paper_markdown_request"
+        "paper_markdown_request",
+        "feedback_set",
+        "feedback_clear"
       ],
       "required": false,
       "tool_timeout_sec": 90
